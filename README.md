@@ -1,4 +1,4 @@
-# okweather
+# OkWeather
 
 A new Flutter project.
 
