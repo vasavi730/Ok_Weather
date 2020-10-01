@@ -58,13 +58,13 @@ class _MyApp extends State<MyApp> {
                 child: Text(
                   "Check the rate of pollution near you",
                   style: TextStyle(
-                      color: Colors.blue[900],
+                      color: Colors.blue[800],
                       fontWeight: FontWeight.bold,
                       fontSize: 25),
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(15.0),
                 child: TextField(
                   onChanged: (value) {
                     url = 'https://pollution-report.herokuapp.com/' +
@@ -72,9 +72,9 @@ class _MyApp extends State<MyApp> {
                   },
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'City name',
+                    labelText: 'City',
                     //labelStyle: TextStyle(fontSize: 20.0, color: Colors.white),
-                    hintText: "Enter your city",
+                    hintText: "Enter city",
                     //hintStyle: TextStyle(fontSize: 20.0, color: Colors.white),
                   ),
                 ),
@@ -114,23 +114,23 @@ class _MyApp extends State<MyApp> {
                 child: Text(
                   status,
                   style: TextStyle(
-                      color: Colors.blue[900],
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.bold),
+                      color: Colors.blue[800],
+                      fontSize: 17.0,
+                     ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(9.0),
                 child: Text(
                   "ozone: " + v1.toString() + " " + " microgram/metre^3",
                   style: TextStyle(
-                      color: Colors.blue[900],
+                      color: Colors.blue[800],
                       fontSize: 15.0,
-                      fontWeight: FontWeight.bold),
+                     ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(9.0),
                 child: Text(
                   "particulate matter 10: " +
                       v2.toString() +
